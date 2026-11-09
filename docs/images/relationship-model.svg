@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="530" viewBox="0 0 1000 530" role="img" aria-labelledby="title desc">
+<title id="title">Validated campaign-finance relationship model</title>
+<desc id="desc">Candidates and committees each have composite keys including cycle. Links, principal committees, and committee candidates each reference both masters, for six foreign keys. Unresolved source links are preserved separately.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#087f8c"/></marker></defs>
+<rect width="1000" height="530" fill="#f7f9fc"/>
+<g font-family="sans-serif" fill="#172b4d">
+<text x="35" y="36" font-size="23" font-weight="bold">fec_model / enforced relationships</text>
+<text x="35" y="61" font-size="14">Six composite foreign keys. Every relationship includes the archive cycle.</text>
+<g fill="none" stroke="#087f8c" stroke-width="2" marker-end="url(#arrow)">
+<path d="M170 245L170 160"/><path d="M220 245L670 160"/>
+<path d="M490 245L290 160"/><path d="M530 245L710 160"/>
+<path d="M790 245L330 160"/><path d="M830 245L830 160"/>
+</g>
+<g stroke="#a8bacb" fill="white">
+<rect x="80" y="85" width="300" height="75" rx="8"/>
+<rect x="620" y="85" width="300" height="75" rx="8"/>
+<rect x="50" y="245" width="270" height="100" rx="8"/>
+<rect x="365" y="245" width="270" height="100" rx="8"/>
+<rect x="680" y="245" width="270" height="100" rx="8"/>
+<rect x="50" y="398" width="900" height="93" rx="8" fill="#eaf0f6"/>
+</g>
+<g font-size="18" font-weight="bold">
+<text x="100" y="113">candidates</text><text x="640" y="113">committees</text>
+<text x="70" y="275">links</text><text x="385" y="275">principal_committees</text><text x="700" y="275">committee_candidates</text>
+<text x="70" y="430">Unresolved references remain visible</text>
+</g>
+<g font-size="14">
+<text x="100" y="141">PK: cycle + cand_id</text><text x="640" y="141">PK: cycle + cmte_id</text>
+<text x="70" y="303">PK: cycle + source_line</text><text x="70" y="327">FK → candidate; FK → committee</text>
+<text x="385" y="303">PK: cycle + cand_id</text><text x="385" y="327">FK → candidate; FK → committee</text>
+<text x="700" y="303">PK: cycle + cmte_id</text><text x="700" y="327">FK → candidate; FK → committee</text>
+<text x="70" y="455">unresolved_links + quality views preserve missing-reference findings without inventing entities.</text>
+<text x="70" y="477">Raw fec tables retain all source records; this model does not resolve financial attribution.</text>
+</g></g></svg>

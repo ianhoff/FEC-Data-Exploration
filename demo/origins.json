@@ -1,0 +1,1566 @@
+{
+  "synthetic": true,
+  "description": "Invented aggregate values for demonstrating UI behavior; no real contributor or campaign data.",
+  "groups": [
+    {
+      "campaign_state": "MD",
+      "state": "AL",
+      "date_scope": "Included",
+      "records": 109,
+      "recorded_amount": 5886.25,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 13
+    },
+    {
+      "campaign_state": "MD",
+      "state": "AK",
+      "date_scope": "Included",
+      "records": 146,
+      "recorded_amount": 10658.5,
+      "invalid_amount_records": 0,
+      "memo_records": 9,
+      "amendment_records": 18
+    },
+    {
+      "campaign_state": "MD",
+      "state": "AZ",
+      "date_scope": "Included",
+      "records": 183,
+      "recorded_amount": 16836.75,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 22
+    },
+    {
+      "campaign_state": "MD",
+      "state": "AR",
+      "date_scope": "Included",
+      "records": 220,
+      "recorded_amount": 24420.0,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "MD",
+      "state": "CA",
+      "date_scope": "Included",
+      "records": 257,
+      "recorded_amount": 33410.25,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "MD",
+      "state": "CO",
+      "date_scope": "Included",
+      "records": 294,
+      "recorded_amount": 43806.5,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 36
+    },
+    {
+      "campaign_state": "MD",
+      "state": "CT",
+      "date_scope": "Included",
+      "records": 331,
+      "recorded_amount": 55608.75,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "MD",
+      "state": "DE",
+      "date_scope": "Included",
+      "records": 368,
+      "recorded_amount": 68816.0,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "MD",
+      "state": "DC",
+      "date_scope": "Included",
+      "records": 405,
+      "recorded_amount": 83430.25,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 50
+    },
+    {
+      "campaign_state": "MD",
+      "state": "FL",
+      "date_scope": "Included",
+      "records": 442,
+      "recorded_amount": 99450.5,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "MD",
+      "state": "GA",
+      "date_scope": "Included",
+      "records": 479,
+      "recorded_amount": 116876.75,
+      "invalid_amount_records": 0,
+      "memo_records": 31,
+      "amendment_records": 59
+    },
+    {
+      "campaign_state": "MD",
+      "state": "HI",
+      "date_scope": "Included",
+      "records": 516,
+      "recorded_amount": 135708.0,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "MD",
+      "state": "ID",
+      "date_scope": "Included",
+      "records": 553,
+      "recorded_amount": 155946.25,
+      "invalid_amount_records": 0,
+      "memo_records": 36,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "MD",
+      "state": "IL",
+      "date_scope": "Included",
+      "records": 590,
+      "recorded_amount": 24190.5,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 73
+    },
+    {
+      "campaign_state": "MD",
+      "state": "IN",
+      "date_scope": "Included",
+      "records": 627,
+      "recorded_amount": 37620.75,
+      "invalid_amount_records": 0,
+      "memo_records": 41,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "MD",
+      "state": "IA",
+      "date_scope": "Included",
+      "records": 664,
+      "recorded_amount": 52456.0,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "MD",
+      "state": "KS",
+      "date_scope": "Included",
+      "records": 701,
+      "recorded_amount": 68698.25,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 87
+    },
+    {
+      "campaign_state": "MD",
+      "state": "KY",
+      "date_scope": "Included",
+      "records": 738,
+      "recorded_amount": 86346.5,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "MD",
+      "state": "LA",
+      "date_scope": "Included",
+      "records": 75,
+      "recorded_amount": 10200.75,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "MD",
+      "state": "ME",
+      "date_scope": "Included",
+      "records": 112,
+      "recorded_amount": 17360.0,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MD",
+      "date_scope": "Included",
+      "records": 1341,
+      "recorded_amount": 233334.25,
+      "invalid_amount_records": 0,
+      "memo_records": 89,
+      "amendment_records": 167
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MA",
+      "date_scope": "Included",
+      "records": 186,
+      "recorded_amount": 35898.5,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MI",
+      "date_scope": "Included",
+      "records": 223,
+      "recorded_amount": 47276.75,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MN",
+      "date_scope": "Included",
+      "records": 260,
+      "recorded_amount": 60060.0,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MS",
+      "date_scope": "Included",
+      "records": 297,
+      "recorded_amount": 74250.25,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MO",
+      "date_scope": "Included",
+      "records": 334,
+      "recorded_amount": 89846.5,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "MD",
+      "state": "MT",
+      "date_scope": "Included",
+      "records": 371,
+      "recorded_amount": 106848.75,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NE",
+      "date_scope": "Included",
+      "records": 408,
+      "recorded_amount": 19176.0,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NV",
+      "date_scope": "Included",
+      "records": 445,
+      "recorded_amount": 29370.25,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NH",
+      "date_scope": "Included",
+      "records": 482,
+      "recorded_amount": 40970.5,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NJ",
+      "date_scope": "Included",
+      "records": 519,
+      "recorded_amount": 53976.75,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NM",
+      "date_scope": "Included",
+      "records": 556,
+      "recorded_amount": 68388.0,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NY",
+      "date_scope": "Included",
+      "records": 593,
+      "recorded_amount": 84206.25,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 74
+    },
+    {
+      "campaign_state": "MD",
+      "state": "NC",
+      "date_scope": "Included",
+      "records": 630,
+      "recorded_amount": 101430.5,
+      "invalid_amount_records": 0,
+      "memo_records": 42,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "MD",
+      "state": "ND",
+      "date_scope": "Included",
+      "records": 667,
+      "recorded_amount": 120060.75,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "MD",
+      "state": "OH",
+      "date_scope": "Included",
+      "records": 704,
+      "recorded_amount": 140096.0,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 88
+    },
+    {
+      "campaign_state": "MD",
+      "state": "OK",
+      "date_scope": "Included",
+      "records": 741,
+      "recorded_amount": 161538.25,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "MD",
+      "state": "OR",
+      "date_scope": "Included",
+      "records": 78,
+      "recorded_amount": 18486.5,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "MD",
+      "state": "PA",
+      "date_scope": "Included",
+      "records": 115,
+      "recorded_amount": 29440.75,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "MD",
+      "state": "RI",
+      "date_scope": "Included",
+      "records": 152,
+      "recorded_amount": 41800.0,
+      "invalid_amount_records": 0,
+      "memo_records": 10,
+      "amendment_records": 19
+    },
+    {
+      "campaign_state": "MD",
+      "state": "SC",
+      "date_scope": "Included",
+      "records": 189,
+      "recorded_amount": 55566.25,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "MD",
+      "state": "SD",
+      "date_scope": "Included",
+      "records": 226,
+      "recorded_amount": 11978.5,
+      "invalid_amount_records": 0,
+      "memo_records": 15,
+      "amendment_records": 28
+    },
+    {
+      "campaign_state": "MD",
+      "state": "TN",
+      "date_scope": "Included",
+      "records": 263,
+      "recorded_amount": 18936.75,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "MD",
+      "state": "TX",
+      "date_scope": "Included",
+      "records": 300,
+      "recorded_amount": 27300.0,
+      "invalid_amount_records": 0,
+      "memo_records": 20,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "MD",
+      "state": "UT",
+      "date_scope": "Included",
+      "records": 337,
+      "recorded_amount": 37070.25,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 42
+    },
+    {
+      "campaign_state": "MD",
+      "state": "VT",
+      "date_scope": "Included",
+      "records": 374,
+      "recorded_amount": 48246.5,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "MD",
+      "state": "VA",
+      "date_scope": "Included",
+      "records": 411,
+      "recorded_amount": 60828.75,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "MD",
+      "state": "WA",
+      "date_scope": "Included",
+      "records": 448,
+      "recorded_amount": 74816.0,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 56
+    },
+    {
+      "campaign_state": "MD",
+      "state": "WV",
+      "date_scope": "Included",
+      "records": 485,
+      "recorded_amount": 90210.25,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "MD",
+      "state": "WI",
+      "date_scope": "Included",
+      "records": 522,
+      "recorded_amount": 107010.5,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 65
+    },
+    {
+      "campaign_state": "MD",
+      "state": "WY",
+      "date_scope": "Included",
+      "records": 559,
+      "recorded_amount": 125216.75,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "MD",
+      "state": null,
+      "date_scope": "Included",
+      "records": 11,
+      "recorded_amount": 275.0,
+      "invalid_amount_records": 0,
+      "memo_records": 1,
+      "amendment_records": 2
+    },
+    {
+      "campaign_state": "DE",
+      "state": "AL",
+      "date_scope": "Included",
+      "records": 109,
+      "recorded_amount": 5886.25,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 13
+    },
+    {
+      "campaign_state": "DE",
+      "state": "AK",
+      "date_scope": "Included",
+      "records": 146,
+      "recorded_amount": 10658.5,
+      "invalid_amount_records": 0,
+      "memo_records": 9,
+      "amendment_records": 18
+    },
+    {
+      "campaign_state": "DE",
+      "state": "AZ",
+      "date_scope": "Included",
+      "records": 183,
+      "recorded_amount": 16836.75,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 22
+    },
+    {
+      "campaign_state": "DE",
+      "state": "AR",
+      "date_scope": "Included",
+      "records": 220,
+      "recorded_amount": 24420.0,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "DE",
+      "state": "CA",
+      "date_scope": "Included",
+      "records": 257,
+      "recorded_amount": 33410.25,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "DE",
+      "state": "CO",
+      "date_scope": "Included",
+      "records": 294,
+      "recorded_amount": 43806.5,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 36
+    },
+    {
+      "campaign_state": "DE",
+      "state": "CT",
+      "date_scope": "Included",
+      "records": 331,
+      "recorded_amount": 55608.75,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "DE",
+      "state": "DE",
+      "date_scope": "Included",
+      "records": 3312,
+      "recorded_amount": 619344.0,
+      "invalid_amount_records": 0,
+      "memo_records": 220,
+      "amendment_records": 414
+    },
+    {
+      "campaign_state": "DE",
+      "state": "DC",
+      "date_scope": "Included",
+      "records": 405,
+      "recorded_amount": 83430.25,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 50
+    },
+    {
+      "campaign_state": "DE",
+      "state": "FL",
+      "date_scope": "Included",
+      "records": 442,
+      "recorded_amount": 99450.5,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "DE",
+      "state": "GA",
+      "date_scope": "Included",
+      "records": 479,
+      "recorded_amount": 116876.75,
+      "invalid_amount_records": 0,
+      "memo_records": 31,
+      "amendment_records": 59
+    },
+    {
+      "campaign_state": "DE",
+      "state": "HI",
+      "date_scope": "Included",
+      "records": 516,
+      "recorded_amount": 135708.0,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "DE",
+      "state": "ID",
+      "date_scope": "Included",
+      "records": 553,
+      "recorded_amount": 155946.25,
+      "invalid_amount_records": 0,
+      "memo_records": 36,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "DE",
+      "state": "IL",
+      "date_scope": "Included",
+      "records": 590,
+      "recorded_amount": 24190.5,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 73
+    },
+    {
+      "campaign_state": "DE",
+      "state": "IN",
+      "date_scope": "Included",
+      "records": 627,
+      "recorded_amount": 37620.75,
+      "invalid_amount_records": 0,
+      "memo_records": 41,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "DE",
+      "state": "IA",
+      "date_scope": "Included",
+      "records": 664,
+      "recorded_amount": 52456.0,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "DE",
+      "state": "KS",
+      "date_scope": "Included",
+      "records": 701,
+      "recorded_amount": 68698.25,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 87
+    },
+    {
+      "campaign_state": "DE",
+      "state": "KY",
+      "date_scope": "Included",
+      "records": 738,
+      "recorded_amount": 86346.5,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "DE",
+      "state": "LA",
+      "date_scope": "Included",
+      "records": 75,
+      "recorded_amount": 10200.75,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "DE",
+      "state": "ME",
+      "date_scope": "Included",
+      "records": 112,
+      "recorded_amount": 17360.0,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MD",
+      "date_scope": "Included",
+      "records": 149,
+      "recorded_amount": 25926.25,
+      "invalid_amount_records": 0,
+      "memo_records": 9,
+      "amendment_records": 18
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MA",
+      "date_scope": "Included",
+      "records": 186,
+      "recorded_amount": 35898.5,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MI",
+      "date_scope": "Included",
+      "records": 223,
+      "recorded_amount": 47276.75,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MN",
+      "date_scope": "Included",
+      "records": 260,
+      "recorded_amount": 60060.0,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MS",
+      "date_scope": "Included",
+      "records": 297,
+      "recorded_amount": 74250.25,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MO",
+      "date_scope": "Included",
+      "records": 334,
+      "recorded_amount": 89846.5,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "DE",
+      "state": "MT",
+      "date_scope": "Included",
+      "records": 371,
+      "recorded_amount": 106848.75,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NE",
+      "date_scope": "Included",
+      "records": 408,
+      "recorded_amount": 19176.0,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NV",
+      "date_scope": "Included",
+      "records": 445,
+      "recorded_amount": 29370.25,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NH",
+      "date_scope": "Included",
+      "records": 482,
+      "recorded_amount": 40970.5,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NJ",
+      "date_scope": "Included",
+      "records": 519,
+      "recorded_amount": 53976.75,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NM",
+      "date_scope": "Included",
+      "records": 556,
+      "recorded_amount": 68388.0,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NY",
+      "date_scope": "Included",
+      "records": 593,
+      "recorded_amount": 84206.25,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 74
+    },
+    {
+      "campaign_state": "DE",
+      "state": "NC",
+      "date_scope": "Included",
+      "records": 630,
+      "recorded_amount": 101430.5,
+      "invalid_amount_records": 0,
+      "memo_records": 42,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "DE",
+      "state": "ND",
+      "date_scope": "Included",
+      "records": 667,
+      "recorded_amount": 120060.75,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "DE",
+      "state": "OH",
+      "date_scope": "Included",
+      "records": 704,
+      "recorded_amount": 140096.0,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 88
+    },
+    {
+      "campaign_state": "DE",
+      "state": "OK",
+      "date_scope": "Included",
+      "records": 741,
+      "recorded_amount": 161538.25,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "DE",
+      "state": "OR",
+      "date_scope": "Included",
+      "records": 78,
+      "recorded_amount": 18486.5,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "DE",
+      "state": "PA",
+      "date_scope": "Included",
+      "records": 115,
+      "recorded_amount": 29440.75,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "DE",
+      "state": "RI",
+      "date_scope": "Included",
+      "records": 152,
+      "recorded_amount": 41800.0,
+      "invalid_amount_records": 0,
+      "memo_records": 10,
+      "amendment_records": 19
+    },
+    {
+      "campaign_state": "DE",
+      "state": "SC",
+      "date_scope": "Included",
+      "records": 189,
+      "recorded_amount": 55566.25,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "DE",
+      "state": "SD",
+      "date_scope": "Included",
+      "records": 226,
+      "recorded_amount": 11978.5,
+      "invalid_amount_records": 0,
+      "memo_records": 15,
+      "amendment_records": 28
+    },
+    {
+      "campaign_state": "DE",
+      "state": "TN",
+      "date_scope": "Included",
+      "records": 263,
+      "recorded_amount": 18936.75,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "DE",
+      "state": "TX",
+      "date_scope": "Included",
+      "records": 300,
+      "recorded_amount": 27300.0,
+      "invalid_amount_records": 0,
+      "memo_records": 20,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "DE",
+      "state": "UT",
+      "date_scope": "Included",
+      "records": 337,
+      "recorded_amount": 37070.25,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 42
+    },
+    {
+      "campaign_state": "DE",
+      "state": "VT",
+      "date_scope": "Included",
+      "records": 374,
+      "recorded_amount": 48246.5,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "DE",
+      "state": "VA",
+      "date_scope": "Included",
+      "records": 411,
+      "recorded_amount": 60828.75,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "DE",
+      "state": "WA",
+      "date_scope": "Included",
+      "records": 448,
+      "recorded_amount": 74816.0,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 56
+    },
+    {
+      "campaign_state": "DE",
+      "state": "WV",
+      "date_scope": "Included",
+      "records": 485,
+      "recorded_amount": 90210.25,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "DE",
+      "state": "WI",
+      "date_scope": "Included",
+      "records": 522,
+      "recorded_amount": 107010.5,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 65
+    },
+    {
+      "campaign_state": "DE",
+      "state": "WY",
+      "date_scope": "Included",
+      "records": 559,
+      "recorded_amount": 125216.75,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "DE",
+      "state": null,
+      "date_scope": "Included",
+      "records": 11,
+      "recorded_amount": 275.0,
+      "invalid_amount_records": 0,
+      "memo_records": 1,
+      "amendment_records": 2
+    },
+    {
+      "campaign_state": "CA",
+      "state": "AL",
+      "date_scope": "Included",
+      "records": 109,
+      "recorded_amount": 5886.25,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 13
+    },
+    {
+      "campaign_state": "CA",
+      "state": "AK",
+      "date_scope": "Included",
+      "records": 146,
+      "recorded_amount": 10658.5,
+      "invalid_amount_records": 0,
+      "memo_records": 9,
+      "amendment_records": 18
+    },
+    {
+      "campaign_state": "CA",
+      "state": "AZ",
+      "date_scope": "Included",
+      "records": 183,
+      "recorded_amount": 16836.75,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 22
+    },
+    {
+      "campaign_state": "CA",
+      "state": "AR",
+      "date_scope": "Included",
+      "records": 220,
+      "recorded_amount": 24420.0,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "CA",
+      "state": "CA",
+      "date_scope": "Included",
+      "records": 2313,
+      "recorded_amount": 300690.25,
+      "invalid_amount_records": 0,
+      "memo_records": 154,
+      "amendment_records": 289
+    },
+    {
+      "campaign_state": "CA",
+      "state": "CO",
+      "date_scope": "Included",
+      "records": 294,
+      "recorded_amount": 43806.5,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 36
+    },
+    {
+      "campaign_state": "CA",
+      "state": "CT",
+      "date_scope": "Included",
+      "records": 331,
+      "recorded_amount": 55608.75,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "CA",
+      "state": "DE",
+      "date_scope": "Included",
+      "records": 368,
+      "recorded_amount": 68816.0,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "CA",
+      "state": "DC",
+      "date_scope": "Included",
+      "records": 405,
+      "recorded_amount": 83430.25,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 50
+    },
+    {
+      "campaign_state": "CA",
+      "state": "FL",
+      "date_scope": "Included",
+      "records": 442,
+      "recorded_amount": 99450.5,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "CA",
+      "state": "GA",
+      "date_scope": "Included",
+      "records": 479,
+      "recorded_amount": 116876.75,
+      "invalid_amount_records": 0,
+      "memo_records": 31,
+      "amendment_records": 59
+    },
+    {
+      "campaign_state": "CA",
+      "state": "HI",
+      "date_scope": "Included",
+      "records": 516,
+      "recorded_amount": 135708.0,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "CA",
+      "state": "ID",
+      "date_scope": "Included",
+      "records": 553,
+      "recorded_amount": 155946.25,
+      "invalid_amount_records": 0,
+      "memo_records": 36,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "CA",
+      "state": "IL",
+      "date_scope": "Included",
+      "records": 590,
+      "recorded_amount": 24190.5,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 73
+    },
+    {
+      "campaign_state": "CA",
+      "state": "IN",
+      "date_scope": "Included",
+      "records": 627,
+      "recorded_amount": 37620.75,
+      "invalid_amount_records": 0,
+      "memo_records": 41,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "CA",
+      "state": "IA",
+      "date_scope": "Included",
+      "records": 664,
+      "recorded_amount": 52456.0,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "CA",
+      "state": "KS",
+      "date_scope": "Included",
+      "records": 701,
+      "recorded_amount": 68698.25,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 87
+    },
+    {
+      "campaign_state": "CA",
+      "state": "KY",
+      "date_scope": "Included",
+      "records": 738,
+      "recorded_amount": 86346.5,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "CA",
+      "state": "LA",
+      "date_scope": "Included",
+      "records": 75,
+      "recorded_amount": 10200.75,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "CA",
+      "state": "ME",
+      "date_scope": "Included",
+      "records": 112,
+      "recorded_amount": 17360.0,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MD",
+      "date_scope": "Included",
+      "records": 149,
+      "recorded_amount": 25926.25,
+      "invalid_amount_records": 0,
+      "memo_records": 9,
+      "amendment_records": 18
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MA",
+      "date_scope": "Included",
+      "records": 186,
+      "recorded_amount": 35898.5,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MI",
+      "date_scope": "Included",
+      "records": 223,
+      "recorded_amount": 47276.75,
+      "invalid_amount_records": 0,
+      "memo_records": 14,
+      "amendment_records": 27
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MN",
+      "date_scope": "Included",
+      "records": 260,
+      "recorded_amount": 60060.0,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MS",
+      "date_scope": "Included",
+      "records": 297,
+      "recorded_amount": 74250.25,
+      "invalid_amount_records": 0,
+      "memo_records": 19,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MO",
+      "date_scope": "Included",
+      "records": 334,
+      "recorded_amount": 89846.5,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 41
+    },
+    {
+      "campaign_state": "CA",
+      "state": "MT",
+      "date_scope": "Included",
+      "records": 371,
+      "recorded_amount": 106848.75,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NE",
+      "date_scope": "Included",
+      "records": 408,
+      "recorded_amount": 19176.0,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NV",
+      "date_scope": "Included",
+      "records": 445,
+      "recorded_amount": 29370.25,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 55
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NH",
+      "date_scope": "Included",
+      "records": 482,
+      "recorded_amount": 40970.5,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NJ",
+      "date_scope": "Included",
+      "records": 519,
+      "recorded_amount": 53976.75,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 64
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NM",
+      "date_scope": "Included",
+      "records": 556,
+      "recorded_amount": 68388.0,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NY",
+      "date_scope": "Included",
+      "records": 593,
+      "recorded_amount": 84206.25,
+      "invalid_amount_records": 0,
+      "memo_records": 39,
+      "amendment_records": 74
+    },
+    {
+      "campaign_state": "CA",
+      "state": "NC",
+      "date_scope": "Included",
+      "records": 630,
+      "recorded_amount": 101430.5,
+      "invalid_amount_records": 0,
+      "memo_records": 42,
+      "amendment_records": 78
+    },
+    {
+      "campaign_state": "CA",
+      "state": "ND",
+      "date_scope": "Included",
+      "records": 667,
+      "recorded_amount": 120060.75,
+      "invalid_amount_records": 0,
+      "memo_records": 44,
+      "amendment_records": 83
+    },
+    {
+      "campaign_state": "CA",
+      "state": "OH",
+      "date_scope": "Included",
+      "records": 704,
+      "recorded_amount": 140096.0,
+      "invalid_amount_records": 0,
+      "memo_records": 46,
+      "amendment_records": 88
+    },
+    {
+      "campaign_state": "CA",
+      "state": "OK",
+      "date_scope": "Included",
+      "records": 741,
+      "recorded_amount": 161538.25,
+      "invalid_amount_records": 0,
+      "memo_records": 49,
+      "amendment_records": 92
+    },
+    {
+      "campaign_state": "CA",
+      "state": "OR",
+      "date_scope": "Included",
+      "records": 78,
+      "recorded_amount": 18486.5,
+      "invalid_amount_records": 0,
+      "memo_records": 5,
+      "amendment_records": 9
+    },
+    {
+      "campaign_state": "CA",
+      "state": "PA",
+      "date_scope": "Included",
+      "records": 115,
+      "recorded_amount": 29440.75,
+      "invalid_amount_records": 0,
+      "memo_records": 7,
+      "amendment_records": 14
+    },
+    {
+      "campaign_state": "CA",
+      "state": "RI",
+      "date_scope": "Included",
+      "records": 152,
+      "recorded_amount": 41800.0,
+      "invalid_amount_records": 0,
+      "memo_records": 10,
+      "amendment_records": 19
+    },
+    {
+      "campaign_state": "CA",
+      "state": "SC",
+      "date_scope": "Included",
+      "records": 189,
+      "recorded_amount": 55566.25,
+      "invalid_amount_records": 0,
+      "memo_records": 12,
+      "amendment_records": 23
+    },
+    {
+      "campaign_state": "CA",
+      "state": "SD",
+      "date_scope": "Included",
+      "records": 226,
+      "recorded_amount": 11978.5,
+      "invalid_amount_records": 0,
+      "memo_records": 15,
+      "amendment_records": 28
+    },
+    {
+      "campaign_state": "CA",
+      "state": "TN",
+      "date_scope": "Included",
+      "records": 263,
+      "recorded_amount": 18936.75,
+      "invalid_amount_records": 0,
+      "memo_records": 17,
+      "amendment_records": 32
+    },
+    {
+      "campaign_state": "CA",
+      "state": "TX",
+      "date_scope": "Included",
+      "records": 300,
+      "recorded_amount": 27300.0,
+      "invalid_amount_records": 0,
+      "memo_records": 20,
+      "amendment_records": 37
+    },
+    {
+      "campaign_state": "CA",
+      "state": "UT",
+      "date_scope": "Included",
+      "records": 337,
+      "recorded_amount": 37070.25,
+      "invalid_amount_records": 0,
+      "memo_records": 22,
+      "amendment_records": 42
+    },
+    {
+      "campaign_state": "CA",
+      "state": "VT",
+      "date_scope": "Included",
+      "records": 374,
+      "recorded_amount": 48246.5,
+      "invalid_amount_records": 0,
+      "memo_records": 24,
+      "amendment_records": 46
+    },
+    {
+      "campaign_state": "CA",
+      "state": "VA",
+      "date_scope": "Included",
+      "records": 411,
+      "recorded_amount": 60828.75,
+      "invalid_amount_records": 0,
+      "memo_records": 27,
+      "amendment_records": 51
+    },
+    {
+      "campaign_state": "CA",
+      "state": "WA",
+      "date_scope": "Included",
+      "records": 448,
+      "recorded_amount": 74816.0,
+      "invalid_amount_records": 0,
+      "memo_records": 29,
+      "amendment_records": 56
+    },
+    {
+      "campaign_state": "CA",
+      "state": "WV",
+      "date_scope": "Included",
+      "records": 485,
+      "recorded_amount": 90210.25,
+      "invalid_amount_records": 0,
+      "memo_records": 32,
+      "amendment_records": 60
+    },
+    {
+      "campaign_state": "CA",
+      "state": "WI",
+      "date_scope": "Included",
+      "records": 522,
+      "recorded_amount": 107010.5,
+      "invalid_amount_records": 0,
+      "memo_records": 34,
+      "amendment_records": 65
+    },
+    {
+      "campaign_state": "CA",
+      "state": "WY",
+      "date_scope": "Included",
+      "records": 559,
+      "recorded_amount": 125216.75,
+      "invalid_amount_records": 0,
+      "memo_records": 37,
+      "amendment_records": 69
+    },
+    {
+      "campaign_state": "CA",
+      "state": null,
+      "date_scope": "Included",
+      "records": 11,
+      "recorded_amount": 275.0,
+      "invalid_amount_records": 0,
+      "memo_records": 1,
+      "amendment_records": 2
+    }
+  ]
+}

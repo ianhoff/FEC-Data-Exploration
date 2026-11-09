@@ -1,0 +1,62 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.14']
+        postgres: ['16', '18']
+    services:
+      postgres:
+        image: postgres:${{ matrix.postgres }}
+        env:
+          POSTGRES_USER: fec_test_runner
+          POSTGRES_PASSWORD: synthetic-ci-only
+          POSTGRES_DB: fec_test_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U fec_test_runner -d fec_test_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # Ephemeral service credentials only; no repository secrets or personal config.
+      FEC_TEST_DSN: host=127.0.0.1 port=5432 dbname=fec_test_ci user=fec_test_runner password=synthetic-ci-only
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Validate dependency compatibility
+        run: python -m pip check
+      - name: Unit, rendering, and PostgreSQL integration tests
+        run: >-
+          python -m pytest --require-db
+          --cov=ingest_fec --cov=build_model --cov=origins --cov-branch
+          --cov-report=term-missing --cov-report=xml
+          --junitxml=test-results/pytest.xml
+      - name: Upload test and coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-python-${{ matrix.python }}-postgres-${{ matrix.postgres }}
+          path: |
+            test-results/
+            coverage.xml
+          if-no-files-found: ignore

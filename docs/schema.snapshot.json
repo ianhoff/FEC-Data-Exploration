@@ -1,0 +1,1960 @@
+{
+  "generated_at_utc": "2026-11-05T22:06:25.241607+00:00",
+  "scope": [
+    "fec",
+    "fec_model"
+  ],
+  "contains_table_rows": false,
+  "columns": [
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_name",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_pty_affiliation",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_election_yr",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_office_st",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_office",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_office_district",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_ici",
+      "ordinal_position": 10,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_status",
+      "ordinal_position": 11,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_pcc",
+      "ordinal_position": 12,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_st1",
+      "ordinal_position": 13,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_st2",
+      "ordinal_position": 14,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_city",
+      "ordinal_position": 15,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_st",
+      "ordinal_position": 16,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "candidates",
+      "column_name": "cand_zip",
+      "ordinal_position": 17,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_nm",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "tres_nm",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_st1",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_st2",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_city",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_st",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_zip",
+      "ordinal_position": 10,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_dsgn",
+      "ordinal_position": 11,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_tp",
+      "ordinal_position": 12,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_pty_affiliation",
+      "ordinal_position": 13,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cmte_filing_freq",
+      "ordinal_position": 14,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "org_tp",
+      "ordinal_position": 15,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "connected_org_nm",
+      "ordinal_position": 16,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "committees",
+      "column_name": "cand_id",
+      "ordinal_position": 17,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "cmte_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "amndt_ind",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "rpt_tp",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "transaction_pgi",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "image_num",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "transaction_tp",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "entity_tp",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "name",
+      "ordinal_position": 10,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "city",
+      "ordinal_position": 11,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "state",
+      "ordinal_position": 12,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "zip_code",
+      "ordinal_position": 13,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "employer",
+      "ordinal_position": 14,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "occupation",
+      "ordinal_position": 15,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "transaction_dt",
+      "ordinal_position": 16,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "transaction_amt",
+      "ordinal_position": 17,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "other_id",
+      "ordinal_position": 18,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "tran_id",
+      "ordinal_position": 19,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "file_num",
+      "ordinal_position": 20,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "memo_cd",
+      "ordinal_position": 21,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "memo_text",
+      "ordinal_position": 22,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "contributions",
+      "column_name": "sub_id",
+      "ordinal_position": 23,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "imports",
+      "column_name": "dataset",
+      "ordinal_position": 1,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "imports",
+      "column_name": "cycle",
+      "ordinal_position": 2,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "imports",
+      "column_name": "source_url",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "imports",
+      "column_name": "row_count",
+      "ordinal_position": 4,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "imports",
+      "column_name": "imported_at",
+      "ordinal_position": 5,
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()"
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cand_election_yr",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "fec_election_yr",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cmte_id",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cmte_tp",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "cmte_dsgn",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec",
+      "table_name": "links",
+      "column_name": "linkage_id",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "built_at",
+      "ordinal_position": 2,
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()"
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "source_imports",
+      "ordinal_position": 3,
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "candidate_count",
+      "ordinal_position": 4,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "committee_count",
+      "ordinal_position": 5,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "resolved_link_count",
+      "ordinal_position": 6,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "builds",
+      "column_name": "unresolved_link_count",
+      "ordinal_position": 7,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_name",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_pty_affiliation",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_election_yr",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_office_st",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_office",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_office_district",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_ici",
+      "ordinal_position": 10,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_status",
+      "ordinal_position": 11,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_pcc",
+      "ordinal_position": 12,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_st1",
+      "ordinal_position": 13,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_st2",
+      "ordinal_position": 14,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_city",
+      "ordinal_position": 15,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_st",
+      "ordinal_position": 16,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "candidates",
+      "column_name": "cand_zip",
+      "ordinal_position": 17,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committee_candidates",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committee_candidates",
+      "column_name": "cmte_id",
+      "ordinal_position": 2,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committee_candidates",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_nm",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "tres_nm",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_st1",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_st2",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_city",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_st",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_zip",
+      "ordinal_position": 10,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_dsgn",
+      "ordinal_position": 11,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_tp",
+      "ordinal_position": 12,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_pty_affiliation",
+      "ordinal_position": 13,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cmte_filing_freq",
+      "ordinal_position": 14,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "org_tp",
+      "ordinal_position": 15,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "connected_org_nm",
+      "ordinal_position": 16,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "committees",
+      "column_name": "cand_id",
+      "ordinal_position": 17,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cand_election_yr",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "fec_election_yr",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cmte_id",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cmte_tp",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "cmte_dsgn",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "links",
+      "column_name": "linkage_id",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "principal_committees",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "principal_committees",
+      "column_name": "cand_id",
+      "ordinal_position": 2,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "principal_committees",
+      "column_name": "cmte_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "schema_migrations",
+      "column_name": "version",
+      "ordinal_position": 1,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "schema_migrations",
+      "column_name": "sha256",
+      "ordinal_position": 2,
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "schema_migrations",
+      "column_name": "applied_at",
+      "ordinal_position": 3,
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()"
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_committee_candidates",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_committee_candidates",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_committee_candidates",
+      "column_name": "cmte_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_committee_candidates",
+      "column_name": "cand_id",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cand_election_yr",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "fec_election_yr",
+      "ordinal_position": 5,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cmte_id",
+      "ordinal_position": 6,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cmte_tp",
+      "ordinal_position": 7,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "cmte_dsgn",
+      "ordinal_position": 8,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "linkage_id",
+      "ordinal_position": 9,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "candidate_absent",
+      "ordinal_position": 10,
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_links",
+      "column_name": "committee_absent",
+      "ordinal_position": 11,
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_principal_committees",
+      "column_name": "cycle",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_principal_committees",
+      "column_name": "source_line",
+      "ordinal_position": 2,
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_principal_committees",
+      "column_name": "cand_id",
+      "ordinal_position": 3,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_schema": "fec_model",
+      "table_name": "unresolved_principal_committees",
+      "column_name": "cmte_id",
+      "ordinal_position": 4,
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    }
+  ],
+  "constraints": [
+    {
+      "schema_name": "fec",
+      "table_name": "candidates",
+      "constraint_name": "candidates_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "candidates",
+      "constraint_name": "candidates_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "candidates",
+      "constraint_name": "candidates_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "committees",
+      "constraint_name": "committees_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "committees",
+      "constraint_name": "committees_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "committees",
+      "constraint_name": "committees_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "contributions",
+      "constraint_name": "contributions_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "contributions",
+      "constraint_name": "contributions_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "contributions",
+      "constraint_name": "contributions_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_dataset_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL dataset"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_imported_at_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL imported_at"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (dataset, cycle)"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_row_count_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL row_count"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "imports",
+      "constraint_name": "imports_source_url_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_url"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "links",
+      "constraint_name": "links_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "links",
+      "constraint_name": "links_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec",
+      "table_name": "links",
+      "constraint_name": "links_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_built_at_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL built_at"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_candidate_count_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL candidate_count"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_committee_count_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL committee_count"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_resolved_link_count_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL resolved_link_count"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_source_imports_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_imports"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "builds",
+      "constraint_name": "builds_unresolved_link_count_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL unresolved_link_count"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "candidates",
+      "constraint_name": "candidates_cand_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cand_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "candidates",
+      "constraint_name": "candidates_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "candidates",
+      "constraint_name": "candidates_cycle_source_line_key",
+      "constraint_type": "u",
+      "definition": "UNIQUE (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "candidates",
+      "constraint_name": "candidates_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, cand_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "candidates",
+      "constraint_name": "candidates_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_cand_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cand_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_cmte_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cmte_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_cycle_cand_id_fkey",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_cycle_cmte_id_fkey",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committee_candidates",
+      "constraint_name": "committee_candidates_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, cmte_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committees",
+      "constraint_name": "committees_cmte_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cmte_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committees",
+      "constraint_name": "committees_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committees",
+      "constraint_name": "committees_cycle_source_line_key",
+      "constraint_type": "u",
+      "definition": "UNIQUE (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committees",
+      "constraint_name": "committees_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, cmte_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "committees",
+      "constraint_name": "committees_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_cand_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cand_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_candidate_fk",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_cmte_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cmte_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_committee_fk",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "links",
+      "constraint_name": "links_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_cand_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cand_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_cmte_id_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cmte_id"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_cycle_cand_id_fkey",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_cycle_cmte_id_fkey",
+      "constraint_type": "f",
+      "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "principal_committees",
+      "constraint_name": "principal_committees_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, cand_id)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "schema_migrations",
+      "constraint_name": "schema_migrations_applied_at_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL applied_at"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "schema_migrations",
+      "constraint_name": "schema_migrations_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (version)"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "schema_migrations",
+      "constraint_name": "schema_migrations_sha256_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL sha256"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "schema_migrations",
+      "constraint_name": "schema_migrations_version_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL version"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "links_cycle_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL cycle"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "links_source_line_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL source_line"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "unresolved_links_candidate_absent_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL candidate_absent"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "unresolved_links_check",
+      "constraint_type": "c",
+      "definition": "CHECK ((candidate_absent OR committee_absent))"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "unresolved_links_committee_absent_not_null",
+      "constraint_type": "n",
+      "definition": "NOT NULL committee_absent"
+    },
+    {
+      "schema_name": "fec_model",
+      "table_name": "unresolved_links",
+      "constraint_name": "unresolved_links_pkey",
+      "constraint_type": "p",
+      "definition": "PRIMARY KEY (cycle, source_line)"
+    }
+  ],
+  "indexes": [
+    {
+      "schemaname": "fec",
+      "tablename": "candidates",
+      "indexname": "candidates_cand_id_idx",
+      "indexdef": "CREATE INDEX candidates_cand_id_idx ON fec.candidates USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "candidates",
+      "indexname": "candidates_pkey",
+      "indexdef": "CREATE UNIQUE INDEX candidates_pkey ON fec.candidates USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "committees",
+      "indexname": "committees_cmte_id_idx",
+      "indexdef": "CREATE INDEX committees_cmte_id_idx ON fec.committees USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "committees",
+      "indexname": "committees_pkey",
+      "indexdef": "CREATE UNIQUE INDEX committees_pkey ON fec.committees USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "contributions",
+      "indexname": "contributions_cmte_id_idx",
+      "indexdef": "CREATE INDEX contributions_cmte_id_idx ON fec.contributions USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "contributions",
+      "indexname": "contributions_pkey",
+      "indexdef": "CREATE UNIQUE INDEX contributions_pkey ON fec.contributions USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "contributions",
+      "indexname": "contributions_state_idx",
+      "indexdef": "CREATE INDEX contributions_state_idx ON fec.contributions USING btree (cycle, state)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "imports",
+      "indexname": "imports_pkey",
+      "indexdef": "CREATE UNIQUE INDEX imports_pkey ON fec.imports USING btree (dataset, cycle)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "links",
+      "indexname": "links_cand_id_idx",
+      "indexdef": "CREATE INDEX links_cand_id_idx ON fec.links USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "links",
+      "indexname": "links_cmte_id_idx",
+      "indexdef": "CREATE INDEX links_cmte_id_idx ON fec.links USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec",
+      "tablename": "links",
+      "indexname": "links_pkey",
+      "indexdef": "CREATE UNIQUE INDEX links_pkey ON fec.links USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "builds",
+      "indexname": "builds_pkey",
+      "indexdef": "CREATE UNIQUE INDEX builds_pkey ON fec_model.builds USING btree (cycle)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "candidates",
+      "indexname": "candidates_cycle_source_line_key",
+      "indexdef": "CREATE UNIQUE INDEX candidates_cycle_source_line_key ON fec_model.candidates USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "candidates",
+      "indexname": "candidates_pkey",
+      "indexdef": "CREATE UNIQUE INDEX candidates_pkey ON fec_model.candidates USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "committee_candidates",
+      "indexname": "committee_candidates_candidate_idx",
+      "indexdef": "CREATE INDEX committee_candidates_candidate_idx ON fec_model.committee_candidates USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "committee_candidates",
+      "indexname": "committee_candidates_pkey",
+      "indexdef": "CREATE UNIQUE INDEX committee_candidates_pkey ON fec_model.committee_candidates USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "committees",
+      "indexname": "committees_cycle_source_line_key",
+      "indexdef": "CREATE UNIQUE INDEX committees_cycle_source_line_key ON fec_model.committees USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "committees",
+      "indexname": "committees_pkey",
+      "indexdef": "CREATE UNIQUE INDEX committees_pkey ON fec_model.committees USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "links",
+      "indexname": "links_candidate_idx",
+      "indexdef": "CREATE INDEX links_candidate_idx ON fec_model.links USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "links",
+      "indexname": "links_committee_idx",
+      "indexdef": "CREATE INDEX links_committee_idx ON fec_model.links USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "links",
+      "indexname": "links_pkey",
+      "indexdef": "CREATE UNIQUE INDEX links_pkey ON fec_model.links USING btree (cycle, source_line)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "principal_committees",
+      "indexname": "principal_committees_committee_idx",
+      "indexdef": "CREATE INDEX principal_committees_committee_idx ON fec_model.principal_committees USING btree (cycle, cmte_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "principal_committees",
+      "indexname": "principal_committees_pkey",
+      "indexdef": "CREATE UNIQUE INDEX principal_committees_pkey ON fec_model.principal_committees USING btree (cycle, cand_id)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "schema_migrations",
+      "indexname": "schema_migrations_pkey",
+      "indexdef": "CREATE UNIQUE INDEX schema_migrations_pkey ON fec_model.schema_migrations USING btree (version)"
+    },
+    {
+      "schemaname": "fec_model",
+      "tablename": "unresolved_links",
+      "indexname": "unresolved_links_pkey",
+      "indexdef": "CREATE UNIQUE INDEX unresolved_links_pkey ON fec_model.unresolved_links USING btree (cycle, source_line)"
+    }
+  ]
+}

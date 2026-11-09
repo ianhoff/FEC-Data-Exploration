@@ -1,0 +1,1436 @@
+{
+  "dictionary_version": 1,
+  "scope": "Source field intent for importer-defined tables; optional tables may not exist in the database. See schema.snapshot.json for live objects.",
+  "raw_rules": {
+    "source_type": "text",
+    "empty_fields": "NULL",
+    "other_whitespace": "preserved",
+    "decoding": "utf-8-sig strict",
+    "foreign_keys_enforced": false
+  },
+  "tables": {
+    "fec.candidates": {
+      "source_prefix": "cn",
+      "archive_member": "cn.txt",
+      "source_dictionary": "https://www.fec.gov/campaign-finance-data/candidate-master-file-description/",
+      "optional": false,
+      "primary_key": [
+        "cycle",
+        "source_line"
+      ],
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "source_position": 1,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cand_name",
+          "source_position": 2,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate name."
+        },
+        {
+          "name": "cand_pty_affiliation",
+          "source_position": 3,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate political party code."
+        },
+        {
+          "name": "cand_election_yr",
+          "source_position": 4,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate election year; may differ from archive cycle and contain unusual values."
+        },
+        {
+          "name": "cand_office_st",
+          "source_position": 5,
+          "type": "text",
+          "nullable": true,
+          "description": "State of the race; use MD for Maryland campaigns, not cand_st."
+        },
+        {
+          "name": "cand_office",
+          "source_position": 6,
+          "type": "text",
+          "nullable": true,
+          "description": "Federal office code: H House, S Senate, P President."
+        },
+        {
+          "name": "cand_office_district",
+          "source_position": 7,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported district code; retain leading zeros."
+        },
+        {
+          "name": "cand_ici",
+          "source_position": 8,
+          "type": "text",
+          "nullable": true,
+          "description": "Incumbent/challenger code: I incumbent, C challenger, O open seat."
+        },
+        {
+          "name": "cand_status",
+          "source_position": 9,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate status code; a record alone does not establish ballot qualification."
+        },
+        {
+          "name": "cand_pcc",
+          "source_position": 10,
+          "type": "text",
+          "nullable": true,
+          "description": "Principal campaign committee ID for this candidate record; join committees on cycle and cmte_id."
+        },
+        {
+          "name": "cand_st1",
+          "source_position": 11,
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing address street line 1."
+        },
+        {
+          "name": "cand_st2",
+          "source_position": 12,
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing address street line 2."
+        },
+        {
+          "name": "cand_city",
+          "source_position": 13,
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing city."
+        },
+        {
+          "name": "cand_st",
+          "source_position": 14,
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing state; distinct from state of the race."
+        },
+        {
+          "name": "cand_zip",
+          "source_position": 15,
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing ZIP code; retain leading zeros."
+        }
+      ]
+    },
+    "fec.committees": {
+      "source_prefix": "cm",
+      "archive_member": "cm.txt",
+      "source_dictionary": "https://www.fec.gov/campaign-finance-data/committee-master-file-description/",
+      "optional": false,
+      "primary_key": [
+        "cycle",
+        "source_line"
+      ],
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cmte_id",
+          "source_position": 1,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cmte_nm",
+          "source_position": 2,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee name."
+        },
+        {
+          "name": "tres_nm",
+          "source_position": 3,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee treasurer name."
+        },
+        {
+          "name": "cmte_st1",
+          "source_position": 4,
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing address street line 1."
+        },
+        {
+          "name": "cmte_st2",
+          "source_position": 5,
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing address street line 2."
+        },
+        {
+          "name": "cmte_city",
+          "source_position": 6,
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing city."
+        },
+        {
+          "name": "cmte_st",
+          "source_position": 7,
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing state; does not establish the state of a candidate race."
+        },
+        {
+          "name": "cmte_zip",
+          "source_position": 8,
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing ZIP code; retain leading zeros."
+        },
+        {
+          "name": "cmte_dsgn",
+          "source_position": 9,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported designation: P principal, A authorized, J joint fundraiser, D leadership PAC, U unauthorized, B lobbyist/registrant PAC."
+        },
+        {
+          "name": "cmte_tp",
+          "source_position": 10,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee type code; consult FEC code dictionary."
+        },
+        {
+          "name": "cmte_pty_affiliation",
+          "source_position": 11,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee political party code."
+        },
+        {
+          "name": "cmte_filing_freq",
+          "source_position": 12,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee filing frequency/status code."
+        },
+        {
+          "name": "org_tp",
+          "source_position": 13,
+          "type": "text",
+          "nullable": true,
+          "description": "Interest group category code."
+        },
+        {
+          "name": "connected_org_nm",
+          "source_position": 14,
+          "type": "text",
+          "nullable": true,
+          "description": "Name of the connected organization, when reported."
+        },
+        {
+          "name": "cand_id",
+          "source_position": 15,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        }
+      ]
+    },
+    "fec.links": {
+      "source_prefix": "ccl",
+      "archive_member": "ccl.txt",
+      "source_dictionary": "https://www.fec.gov/campaign-finance-data/candidate-committee-linkage-file-description/",
+      "optional": false,
+      "primary_key": [
+        "cycle",
+        "source_line"
+      ],
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "source_position": 1,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cand_election_yr",
+          "source_position": 2,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate election year; may differ from archive cycle and contain unusual values."
+        },
+        {
+          "name": "fec_election_yr",
+          "source_position": 3,
+          "type": "text",
+          "nullable": true,
+          "description": "Source-reported active two-year linkage period; distinct from candidate election year."
+        },
+        {
+          "name": "cmte_id",
+          "source_position": 4,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cmte_tp",
+          "source_position": 5,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee type code; consult FEC code dictionary."
+        },
+        {
+          "name": "cmte_dsgn",
+          "source_position": 6,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported designation: P principal, A authorized, J joint fundraiser, D leadership PAC, U unauthorized, B lobbyist/registrant PAC."
+        },
+        {
+          "name": "linkage_id",
+          "source_position": 7,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC linkage identifier; retained as text, not an enforced raw business key."
+        }
+      ]
+    },
+    "fec.contributions": {
+      "source_prefix": "indiv",
+      "archive_member": "itcont.txt",
+      "source_dictionary": "https://www.fec.gov/campaign-finance-data/contributions-individuals-file-description/",
+      "optional": true,
+      "primary_key": [
+        "cycle",
+        "source_line"
+      ],
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cmte_id",
+          "source_position": 1,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "amndt_ind",
+          "source_position": 2,
+          "type": "text",
+          "nullable": true,
+          "description": "Report amendment indicator: N new, A amendment, T termination; not a complete deduplication rule."
+        },
+        {
+          "name": "rpt_tp",
+          "source_position": 3,
+          "type": "text",
+          "nullable": true,
+          "description": "Report type code."
+        },
+        {
+          "name": "transaction_pgi",
+          "source_position": 4,
+          "type": "text",
+          "nullable": true,
+          "description": "Election designation such as primary/general plus election year."
+        },
+        {
+          "name": "image_num",
+          "source_position": 5,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC filing image number; retain as text."
+        },
+        {
+          "name": "transaction_tp",
+          "source_position": 6,
+          "type": "text",
+          "nullable": true,
+          "description": "Transaction type code; financial meaning depends on this code."
+        },
+        {
+          "name": "entity_tp",
+          "source_position": 7,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor entity type code, such as IND or COM."
+        },
+        {
+          "name": "name",
+          "source_position": 8,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor/lender/transfer name; not a stable donor identifier."
+        },
+        {
+          "name": "city",
+          "source_position": 9,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor city."
+        },
+        {
+          "name": "state",
+          "source_position": 10,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor state; use MD for Maryland contribution origins, not Maryland campaigns."
+        },
+        {
+          "name": "zip_code",
+          "source_position": 11,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor ZIP code; retain leading zeros and full source value."
+        },
+        {
+          "name": "employer",
+          "source_position": 12,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor employer."
+        },
+        {
+          "name": "occupation",
+          "source_position": 13,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported contributor occupation."
+        },
+        {
+          "name": "transaction_dt",
+          "source_position": 14,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported transaction date in MMDDYYYY form; raw text, validation required before date conversion."
+        },
+        {
+          "name": "transaction_amt",
+          "source_position": 15,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported transaction amount; raw text, validate before exact numeric conversion; raw sums are not official fundraising totals."
+        },
+        {
+          "name": "other_id",
+          "source_position": 16,
+          "type": "text",
+          "nullable": true,
+          "description": "Other entity identifier where applicable; not a general individual-donor ID."
+        },
+        {
+          "name": "tran_id",
+          "source_position": 17,
+          "type": "text",
+          "nullable": true,
+          "description": "Report/committee-context transaction identifier; not globally unique and may recur across amendments."
+        },
+        {
+          "name": "file_num",
+          "source_position": 18,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC report/file identifier."
+        },
+        {
+          "name": "memo_cd",
+          "source_position": 19,
+          "type": "text",
+          "nullable": true,
+          "description": "Memo indicator; retain and interpret with reporting context rather than silently dropping records."
+        },
+        {
+          "name": "memo_text",
+          "source_position": 20,
+          "type": "text",
+          "nullable": true,
+          "description": "Reported transaction memo text."
+        },
+        {
+          "name": "sub_id",
+          "source_position": 21,
+          "type": "text",
+          "nullable": true,
+          "description": "FEC source record identifier; preserved, not the raw table primary key."
+        }
+      ]
+    },
+    "fec.imports": {
+      "primary_key": [
+        "dataset",
+        "cycle"
+      ],
+      "fields": [
+        {
+          "name": "dataset",
+          "type": "text",
+          "nullable": false,
+          "description": "Importer dataset name."
+        },
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle."
+        },
+        {
+          "name": "source_url",
+          "type": "text",
+          "nullable": false,
+          "description": "URL used for this successful load; not a source checksum."
+        },
+        {
+          "name": "row_count",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Rows copied by the latest successful dataset/cycle import."
+        },
+        {
+          "name": "imported_at",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "description": "Transaction now() timestamp for latest successful load; not the source publication date."
+        }
+      ]
+    },
+    "fec_model.builds": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle; part of relationship keys."
+        },
+        {
+          "name": "built_at",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "description": "Transaction timestamp of the latest successful model build for this cycle."
+        },
+        {
+          "name": "source_imports",
+          "type": "jsonb",
+          "nullable": false,
+          "description": "Captured latest-success import metadata for the three source datasets; not a file checksum."
+        },
+        {
+          "name": "candidate_count",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Modeled candidate rows for this cycle."
+        },
+        {
+          "name": "committee_count",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Modeled committee rows for this cycle."
+        },
+        {
+          "name": "resolved_link_count",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Links accepted with both master references present."
+        },
+        {
+          "name": "unresolved_link_count",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Links preserved separately because at least one reference is absent."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_built_at_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL built_at"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_candidate_count_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL candidate_count"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_committee_count_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL committee_count"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_resolved_link_count_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL resolved_link_count"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_source_imports_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL source_imports"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "builds",
+          "constraint_name": "builds_unresolved_link_count_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL unresolved_link_count"
+        }
+      ]
+    },
+    "fec_model.candidates": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": false,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cand_name",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate name."
+        },
+        {
+          "name": "cand_pty_affiliation",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate political party code."
+        },
+        {
+          "name": "cand_election_yr",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate election year; may differ from archive cycle and contain unusual values."
+        },
+        {
+          "name": "cand_office_st",
+          "type": "text",
+          "nullable": true,
+          "description": "State of the race; use MD for Maryland campaigns, not cand_st."
+        },
+        {
+          "name": "cand_office",
+          "type": "text",
+          "nullable": true,
+          "description": "Federal office code: H House, S Senate, P President."
+        },
+        {
+          "name": "cand_office_district",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported district code; retain leading zeros."
+        },
+        {
+          "name": "cand_ici",
+          "type": "text",
+          "nullable": true,
+          "description": "Incumbent/challenger code: I incumbent, C challenger, O open seat."
+        },
+        {
+          "name": "cand_status",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate status code; a record alone does not establish ballot qualification."
+        },
+        {
+          "name": "cand_pcc",
+          "type": "text",
+          "nullable": true,
+          "description": "Principal campaign committee ID for this candidate record; join committees on cycle and cmte_id."
+        },
+        {
+          "name": "cand_st1",
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing address street line 1."
+        },
+        {
+          "name": "cand_st2",
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing address street line 2."
+        },
+        {
+          "name": "cand_city",
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing city."
+        },
+        {
+          "name": "cand_st",
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing state; distinct from state of the race."
+        },
+        {
+          "name": "cand_zip",
+          "type": "text",
+          "nullable": true,
+          "description": "Candidate mailing ZIP code; retain leading zeros."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "candidates",
+          "constraint_name": "candidates_cand_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cand_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "candidates",
+          "constraint_name": "candidates_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "candidates",
+          "constraint_name": "candidates_cycle_source_line_key",
+          "constraint_type": "u",
+          "definition": "UNIQUE (cycle, source_line)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "candidates",
+          "constraint_name": "candidates_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, cand_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "candidates",
+          "constraint_name": "candidates_source_line_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL source_line"
+        }
+      ]
+    },
+    "fec_model.committee_candidates": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle; part of relationship keys."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": false,
+          "description": "Committee reference; enforced in accepted relationship tables."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": false,
+          "description": "Candidate reference; enforced in accepted relationship tables."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_cand_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cand_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_cmte_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cmte_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_cycle_cand_id_fkey",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_cycle_cmte_id_fkey",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committee_candidates",
+          "constraint_name": "committee_candidates_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, cmte_id)"
+        }
+      ]
+    },
+    "fec_model.committees": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": false,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cmte_nm",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee name."
+        },
+        {
+          "name": "tres_nm",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee treasurer name."
+        },
+        {
+          "name": "cmte_st1",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing address street line 1."
+        },
+        {
+          "name": "cmte_st2",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing address street line 2."
+        },
+        {
+          "name": "cmte_city",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing city."
+        },
+        {
+          "name": "cmte_st",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing state; does not establish the state of a candidate race."
+        },
+        {
+          "name": "cmte_zip",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee mailing ZIP code; retain leading zeros."
+        },
+        {
+          "name": "cmte_dsgn",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported designation: P principal, A authorized, J joint fundraiser, D leadership PAC, U unauthorized, B lobbyist/registrant PAC."
+        },
+        {
+          "name": "cmte_tp",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee type code; consult FEC code dictionary."
+        },
+        {
+          "name": "cmte_pty_affiliation",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee political party code."
+        },
+        {
+          "name": "cmte_filing_freq",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee filing frequency/status code."
+        },
+        {
+          "name": "org_tp",
+          "type": "text",
+          "nullable": true,
+          "description": "Interest group category code."
+        },
+        {
+          "name": "connected_org_nm",
+          "type": "text",
+          "nullable": true,
+          "description": "Name of the connected organization, when reported."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "committees",
+          "constraint_name": "committees_cmte_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cmte_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committees",
+          "constraint_name": "committees_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committees",
+          "constraint_name": "committees_cycle_source_line_key",
+          "constraint_type": "u",
+          "definition": "UNIQUE (cycle, source_line)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committees",
+          "constraint_name": "committees_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, cmte_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "committees",
+          "constraint_name": "committees_source_line_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL source_line"
+        }
+      ]
+    },
+    "fec_model.links": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": false,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cand_election_yr",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate election year; may differ from archive cycle and contain unusual values."
+        },
+        {
+          "name": "fec_election_yr",
+          "type": "text",
+          "nullable": true,
+          "description": "Source-reported active two-year linkage period; distinct from candidate election year."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": false,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cmte_tp",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee type code; consult FEC code dictionary."
+        },
+        {
+          "name": "cmte_dsgn",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported designation: P principal, A authorized, J joint fundraiser, D leadership PAC, U unauthorized, B lobbyist/registrant PAC."
+        },
+        {
+          "name": "linkage_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC linkage identifier; retained as text, not an enforced raw business key."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_cand_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cand_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_candidate_fk",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_cmte_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cmte_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_committee_fk",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, source_line)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "links",
+          "constraint_name": "links_source_line_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL source_line"
+        }
+      ]
+    },
+    "fec_model.principal_committees": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle; part of relationship keys."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": false,
+          "description": "Candidate reference; enforced in accepted relationship tables."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": false,
+          "description": "Committee reference; enforced in accepted relationship tables."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_cand_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cand_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_cmte_id_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cmte_id"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_cycle_cand_id_fkey",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cand_id) REFERENCES candidates(cycle, cand_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_cycle_cmte_id_fkey",
+          "constraint_type": "f",
+          "definition": "FOREIGN KEY (cycle, cmte_id) REFERENCES committees(cycle, cmte_id)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "principal_committees",
+          "constraint_name": "principal_committees_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, cand_id)"
+        }
+      ]
+    },
+    "fec_model.schema_migrations": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "version",
+          "type": "text",
+          "nullable": false,
+          "description": "Applied SQL migration filename."
+        },
+        {
+          "name": "sha256",
+          "type": "text",
+          "nullable": false,
+          "description": "Checksum of migration SQL, not of source data."
+        },
+        {
+          "name": "applied_at",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "description": "Transaction timestamp when this migration was applied."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "schema_migrations",
+          "constraint_name": "schema_migrations_applied_at_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL applied_at"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "schema_migrations",
+          "constraint_name": "schema_migrations_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (version)"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "schema_migrations",
+          "constraint_name": "schema_migrations_sha256_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL sha256"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "schema_migrations",
+          "constraint_name": "schema_migrations_version_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL version"
+        }
+      ]
+    },
+    "fec_model.unresolved_committee_candidates": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": true,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": true,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        }
+      ],
+      "constraints": []
+    },
+    "fec_model.unresolved_links": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": false,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": false,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cand_election_yr",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported candidate election year; may differ from archive cycle and contain unusual values."
+        },
+        {
+          "name": "fec_election_yr",
+          "type": "text",
+          "nullable": true,
+          "description": "Source-reported active two-year linkage period; distinct from candidate election year."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC committee identifier; join within the selected archive cycle."
+        },
+        {
+          "name": "cmte_tp",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported committee type code; consult FEC code dictionary."
+        },
+        {
+          "name": "cmte_dsgn",
+          "type": "text",
+          "nullable": true,
+          "description": "Reported designation: P principal, A authorized, J joint fundraiser, D leadership PAC, U unauthorized, B lobbyist/registrant PAC."
+        },
+        {
+          "name": "linkage_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC linkage identifier; retained as text, not an enforced raw business key."
+        },
+        {
+          "name": "candidate_absent",
+          "type": "boolean",
+          "nullable": false,
+          "description": "True when no modeled candidate matches the cycle and source candidate ID."
+        },
+        {
+          "name": "committee_absent",
+          "type": "boolean",
+          "nullable": false,
+          "description": "True when no modeled committee matches the cycle and source committee ID."
+        }
+      ],
+      "constraints": [
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "links_cycle_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL cycle"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "links_source_line_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL source_line"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "unresolved_links_candidate_absent_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL candidate_absent"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "unresolved_links_check",
+          "constraint_type": "c",
+          "definition": "CHECK ((candidate_absent OR committee_absent))"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "unresolved_links_committee_absent_not_null",
+          "constraint_type": "n",
+          "definition": "NOT NULL committee_absent"
+        },
+        {
+          "schema_name": "fec_model",
+          "table_name": "unresolved_links",
+          "constraint_name": "unresolved_links_pkey",
+          "constraint_type": "p",
+          "definition": "PRIMARY KEY (cycle, source_line)"
+        }
+      ]
+    },
+    "fec_model.unresolved_principal_committees": {
+      "layer": "validated relationship snapshot or quality object",
+      "fields": [
+        {
+          "name": "cycle",
+          "type": "integer",
+          "nullable": true,
+          "description": "Archive cycle supplied by the importer; part of the enforced primary key."
+        },
+        {
+          "name": "source_line",
+          "type": "bigint",
+          "nullable": true,
+          "description": "Physical source-file line number; part of the enforced primary key and snapshot-relative."
+        },
+        {
+          "name": "cand_id",
+          "type": "text",
+          "nullable": true,
+          "description": "FEC candidate identifier; stable across cycles for the same office, not a universal person identifier."
+        },
+        {
+          "name": "cmte_id",
+          "type": "text",
+          "nullable": true,
+          "description": "Committee reference; enforced in accepted relationship tables."
+        }
+      ],
+      "constraints": []
+    }
+  },
+  "analyses": {
+    "contribution_origins": {
+      "module": "origins.py",
+      "policy": "docs/data-model.md#contribution-origins-analysis-policy",
+      "grain": "Source state code and date inclusion category for selected distinct principal committee IDs and archive cycle.",
+      "fields": {
+        "state": "Exact reported contributor state code; no normalization.",
+        "date_scope": "Included, Invalid or missing date, or Outside date range.",
+        "records": "Count of raw reported transaction records; not unique donors.",
+        "recorded_amount": "Sum of parseable signed decimal amounts; not official fundraising.",
+        "invalid_amount_records": "Records with missing/invalid amounts; included in counts, not amounts.",
+        "memo_records": "Records whose memo_cd is X; retained.",
+        "amendment_records": "Records whose amndt_ind is A; retained."
+      },
+      "recipient_selection": "Distinct principal committee IDs from House/Senate candidate records matching the selected race state and archive; default Maryland, 50 states plus DC supported. Optional election year/candidate filters apply.",
+      "map_exclusion": "Selected campaign state excluded from color scale and map shares by default; totals and exports retain it. Toggle restores it."
+    }
+  }
+}
