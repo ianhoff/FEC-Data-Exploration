@@ -2,7 +2,7 @@ from decimal import Decimal
 
 import pandas as pd
 import pytest
-from origins import state_tables,committee_ids,choropleth,STATES
+from fec_explorer.origins import state_tables,committee_ids,choropleth,STATES
 
 
 def test_recipient_ids_are_unique_not_transaction_rows():

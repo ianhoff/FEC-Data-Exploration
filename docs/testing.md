@@ -14,6 +14,10 @@ Install test dependencies once into the existing environment:
 .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 ```
 
+Requirements install the `src/fec_explorer` package in editable mode. Tests import
+`fec_explorer.*`, not the root CLI wrappers. Pytest uses importlib import mode
+without a `pythonpath` override; the package must be installed before collection.
+
 Run unit and actual SVG rendering tests without PostgreSQL:
 
 ```powershell
@@ -84,7 +88,7 @@ caller-supplied connections so tests exercise real SQL without calling CLI setup
 ## Reports and CI
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest --require-db --cov=ingest_fec --cov=build_model --cov=origins --cov-branch --cov-report=term-missing --cov-report=xml --junitxml=test-results/pytest.xml
+.\.venv\Scripts\python.exe -m pytest --require-db --cov=fec_explorer.ingestion --cov=fec_explorer.modeling --cov=fec_explorer.origins --cov-branch --cov-report=term-missing --cov-report=xml --junitxml=test-results/pytest.xml
 ```
 
 Coverage measures those three modules, including currently unexercised CLI paths;
@@ -100,3 +104,8 @@ reports are available.
 
 The workflow must run on GitHub to verify the complete Linux/version matrix.
 A local Windows pass does not establish that all CI combinations passed.
+
+CI also builds a wheel and checks bundled map resources from outside the checkout
+using `scripts/check_wheel.py`. Unit tests verify editable imports from another
+working directory. The synthetic live-page integration check exercises extracted
+page modules using the disposable connection rather than personal authentication.

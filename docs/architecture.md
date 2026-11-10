@@ -29,24 +29,28 @@ database. DBeaver is not an ingestion component.
 
 | File | Responsibility |
 | --- | --- |
-| `ingest_fec.py` | Dataset definitions, cached downloads, parsing, table creation, COPY, indexes, latest-success tracking |
-| `app.py` | Read-only query helper, Maryland views, national browsing, quality checks, SQL previews |
-| `origins.py` | Cached, read-only contribution state aggregation and locally bundled choropleth |
+| `src/fec_explorer/ingestion.py` | Dataset definitions, cached downloads, parsing, COPY and import tracking |
+| `src/fec_explorer/modeling.py` | Migration application and atomic model refresh |
+| `src/fec_explorer/database.py` | Live read-only query helper |
+| `src/fec_explorer/application.py` | Live navigation and error handling |
+| `src/fec_explorer/pages/` | Individual live page implementations |
+| `src/fec_explorer/origins.py` | Contribution aggregation and choropleth rendering |
+| `app.py`, `ingest_fec.py`, `build_model.py` | Thin root entrypoints retaining existing commands |
 | `check_origins.py` | Synthetic SQL edge cases and live contribution-map interaction checks |
 | `check_map_render.py` | Offline SVG map rendering checks, including Maryland exclusion |
-| `setup_db_access.py` | One-time role/schema provisioning and local password-file setup |
+| `src/fec_explorer/access.py` | One-time role/schema provisioning; root setup_db_access.py is its wrapper |
 | `check_app.py` | Live database Streamlit AppTest smoke checks for the original 2024 snapshot |
 | `verify_import.sql` | Connection identity, actual/tracked counts, duplicate IDs, unresolved links |
 | `explore.sql` | Starter queries; contribution queries require a separate contribution import |
-| `export_schema.py` | Read-only catalog export for columns, keys, indexes, and relationships |
-| `build_model.py` | Versioned migrations and atomic refresh of validated master/relationship snapshots |
+| `src/fec_explorer/schema_export.py` | Read-only catalog export; root export_schema.py is its wrapper |
 | `check_model.py` | Live model reconciliation and rollback-only foreign-key rejection checks |
 | `verify_model.sql` | DBeaver queries for model counts, foreign keys, and unresolved references |
 | `.streamlit/config.toml` | Loopback server, theme, telemetry preference |
 
-`requirements.txt` installs ingestion dependencies; `requirements-app.txt` adds
-Streamlit. The current app also directly imports pandas and Altair, supplied by
-Streamlit's dependencies. Dependency ranges are not a reproducible lockfile.
+`pyproject.toml` discovers the installable package under `src/`. `requirements.txt`
+installs it in editable mode with ingestion dependencies; `requirements-app.txt`
+adds Streamlit, pandas, and Altair explicitly. Dependency ranges are not a lockfile.
+See [source layout](source-layout.md) for package, entrypoint, and resource boundaries.
 
 ## Ingestion lifecycle
 
@@ -107,7 +111,7 @@ PostgreSQL 16+ `pg_input_is_valid` to validate ISO dates reconstructed from sour
 MMDDYYYY text. SQL computes exact numeric sums; chart values convert to floats for
 display. Only state-level aggregates, not contributor rows, reach the browser.
 
-The map uses local `assets/us-states-10m.json` TopoJSON from us-atlas, with integer
+The map uses packaged `fec_explorer/resources/us-states-10m.json` TopoJSON from us-atlas, with integer
 FIPS lookup IDs and Albers USA projection. It requires no map service at runtime.
 The inline data format explicitly declares `type='topojson'`; a feature name alone
 does not tell Vega to decode topology. `check_map_render.py` renders SVG offline
@@ -137,7 +141,7 @@ database and integration tests against explicit disposable `fec_test_*` targets.
 GitHub Actions runs the full suite using PostgreSQL services. See
 [testing guide](testing.md) for setup, report commands, and cleanup safeguards.
 These tests are separate from the root local snapshot checks described below.
-`build_model.build()` and `origins.fetch_aggregate()` accept explicit connections;
+`fec_explorer.modeling.build()` and `fec_explorer.origins.fetch_aggregate()` accept explicit connections;
 their CLI/UI wrappers retain the existing authentication and transaction behavior.
 Candidate-recipient selection and principal-ID deduplication are shared with app
 code so synthetic tests cover the same selection rules used by the map.

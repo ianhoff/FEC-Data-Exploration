@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campaign-finance-explorer"
+version = "0.1.0"
+description = "FEC ingestion, validated relationships, and campaign contribution geography"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["psycopg[binary]>=3.2,<4"]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.50,<2", "pandas>=2,<4", "altair>=5,<7"]
+dev = ["pytest>=8,<10", "pytest-cov>=6,<8", "vl-convert-python>=1.9,<2"]
+
+[project.urls]
+Repository = "https://github.com/ianhoff/FEC-Data-Exploration"
+
+[project.scripts]
+fec-ingest = "fec_explorer.ingestion:run"
+fec-build-model = "fec_explorer.modeling:run"
+fec-export-schema = "fec_explorer.schema_export:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"fec_explorer.resources" = ["*.json", "*-LICENSE"]

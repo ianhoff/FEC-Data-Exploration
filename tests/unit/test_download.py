@@ -2,7 +2,7 @@ import io
 import zipfile
 
 import pytest
-import ingest_fec
+from fec_explorer import ingestion as ingest_fec
 
 
 def archive_bytes():

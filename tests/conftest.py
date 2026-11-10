@@ -7,7 +7,7 @@ from pathlib import Path
 import psycopg
 import pytest
 
-from ingest_fec import SPECS, ingest
+from fec_explorer.ingestion import SPECS, ingest
 from tests.db_safety import test_connection_settings
 
 

@@ -13,9 +13,11 @@ It is not a screenshot of live FEC findings.*
 
 ## Try the demo in minutes
 
-No PostgreSQL, account credentials, or FEC download is needed. Requires Python 3.10+.
+No PostgreSQL, account credentials, or FEC download is needed. Requires Git and Python 3.10+.
 
 ```powershell
+git clone https://github.com/ianhoff/FEC-Data-Exploration.git
+cd FEC-Data-Exploration
 py -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-app.txt
 .\.venv\Scripts\python.exe -m streamlit run demo_app.py
@@ -31,6 +33,12 @@ amount/count measures, state exclusion, CSV exports, and a model tour.
 **Every financial value is invented and prominently labeled synthetic.**
 The live app adds all-state selection, candidate/election-year/date filters,
 national raw-table exploration, candidate profiles, and data-quality checks.
+
+The requirements install the `src/fec_explorer` package in editable mode. If you
+already have dependencies installed after updating this checkout, run
+`.\.venv\Scripts\python.exe -m pip install -e .` once to register the package.
+The root `app.py`, `demo_app.py`, and CLI wrappers keep their existing commands.
+See [source layout](docs/source-layout.md) for package structure and resource paths.
 
 ## Engineering focus
 

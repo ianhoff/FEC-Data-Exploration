@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 import vl_convert as vl
 
-from origins import STATES, choropleth
+from fec_explorer.origins import STATES, choropleth
 
 values = STATES.copy()
 values['records'] = range(1, 52)

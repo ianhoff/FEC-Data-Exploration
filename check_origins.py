@@ -6,7 +6,7 @@ from datetime import date
 import psycopg
 from streamlit.testing.v1 import AppTest
 
-from origins import ORIGINS_SQL, state_tables, choropleth
+from fec_explorer.origins import ORIGINS_SQL, state_tables, choropleth
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent

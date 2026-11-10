@@ -26,6 +26,9 @@ def main():
             findings.append((name,'local-only or sensitive file is a publication candidate'))
             continue
         absolute=ROOT/path
+        if not absolute.exists():
+            # A tracked deletion is not part of the proposed working-tree release.
+            continue
         if absolute.stat().st_size>10*1024*1024:
             findings.append((name,'unexpectedly large file'))
         if path.suffix.lower() not in {'.py','.json','.md','.yml','.yaml','.toml','.txt','.ini',''}:

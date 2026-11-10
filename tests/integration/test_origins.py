@@ -4,7 +4,7 @@ from decimal import Decimal
 import pandas as pd
 import pytest
 
-from origins import CANDIDATES_SQL,committee_ids,fetch_aggregate,state_tables
+from fec_explorer.origins import CANDIDATES_SQL,committee_ids,fetch_aggregate,state_tables
 
 pytestmark=pytest.mark.integration
 

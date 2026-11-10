@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from origins import choropleth, state_tables
+from fec_explorer.origins import choropleth, state_tables
 
 ROOT = Path(__file__).resolve().parent
 

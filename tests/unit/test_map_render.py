@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 
 import pytest
 import vl_convert as vl
-from origins import STATES,choropleth
+from fec_explorer.origins import STATES,choropleth
 
 pytestmark=pytest.mark.rendering
 

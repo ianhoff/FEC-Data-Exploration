@@ -15,6 +15,11 @@ Column definitions are in [the data dictionary](docs/data-dictionary.json).
 
 ## Working commands (PowerShell, project root)
 
+Reusable code now lives in `src/fec_explorer/`; read [source layout](docs/source-layout.md).
+Install it with `pip install -e .` (also done by requirements files). Use package
+imports in tests/code; root app/CLI files are thin entrypoints. Map data is packaged
+via importlib.resources; local configs/data/migrations remain checkout-relative.
+
 Portable tests: read [testing guide](docs/testing.md). Use
 `.\.venv\Scripts\python.exe -m pytest -m "not integration"` for synthetic unit/rendering
 tests; the full suite uses `--require-db` and explicit `FEC_TEST_DSN` targeting an

@@ -1417,7 +1417,7 @@
   },
   "analyses": {
     "contribution_origins": {
-      "module": "origins.py",
+      "module": "fec_explorer.origins",
       "policy": "docs/data-model.md#contribution-origins-analysis-policy",
       "grain": "Source state code and date inclusion category for selected distinct principal committee IDs and archive cycle.",
       "fields": {

@@ -27,9 +27,10 @@ fundraising totals. See [the analysis policy](docs/data-model.md#contribution-or
 
 ## Map boundaries
 
-`assets/us-states-10m.json` comes from us-atlas 3, which derives boundaries from
+`src/fec_explorer/resources/us-states-10m.json` comes from us-atlas 3, which derives boundaries from
 US Census Bureau cartographic files. Its upstream ISC license and copyright are
 retained in [assets/us-atlas-LICENSE](assets/us-atlas-LICENSE).
+The same license is bundled beside the map resource in distributions.
 See [asset provenance](assets/README.md). The screenshot/preview uses these same
 boundaries; its contribution values are synthetic.
 

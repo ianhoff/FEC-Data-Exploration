@@ -1,5 +1,5 @@
 import pytest
-from ingest_fec import ingest
+from fec_explorer.ingestion import ingest
 
 pytestmark=pytest.mark.integration
 

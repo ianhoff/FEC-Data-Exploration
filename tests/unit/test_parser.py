@@ -2,7 +2,7 @@ import zipfile
 
 import pytest
 
-from ingest_fec import rows_from_zip, SPECS
+from fec_explorer.ingestion import rows_from_zip, SPECS
 
 
 def test_preserves_source_fields_and_lineage(tmp_path):

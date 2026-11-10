@@ -3,7 +3,7 @@ import shutil
 
 import psycopg
 import pytest
-from build_model import build
+from fec_explorer.modeling import build
 
 pytestmark=pytest.mark.integration
 
